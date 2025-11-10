@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import video from "./food.mp4";
+import video from "./avocadoo.mp4";
 import MyRecipesComponent from './MyRecipesComponent';
 
 function App() {
-const MY_ID = "d6236d5f";
-const MY_KEY = "cb32beb5127a25a7bddd48f2b7732823";
+  const MY_ID = "676bdf5a";
+  const MY_KEY = "d31e7f86973f8887844029baf6b274d3";
 
 const [mySearch, setMySearch] = useState ("");
 const [myRecipes, setMyRecipes] = useState ([]);
-const [wordSubmitted, setWordSubmitted] = useState("avocado");
+const [wordSubmitted, setWordSubmitted] = useState("ananas");
 
 useEffect(() => {
   const getRecipe = async () => {
@@ -38,6 +38,8 @@ useEffect(() => {
         <form onSubmit={finalSearch}>
           <input
             className="search"
+            type="text"
+            placeholder="Enter the ingredients you have..."
             onChange={myRecipeSearch}
             value={mySearch}
           />
@@ -46,18 +48,25 @@ useEffect(() => {
 
       <div className="container">
         <button onClick={finalSearch}>
-          <img src="https://img.icons8.com/fluency/48/000000/fry.png" alt="icon" />
+          <img
+            className="pan"
+            src="https://img.icons8.com/fluency/48/000000/fry.png"
+            alt="pan"
+          />
         </button>
       </div>
-
       {myRecipes.map((element, index) => (
-        <MyRecipesComponent key={index}
+        <MyRecipesComponent
+          key={index}
           label={element.recipe.label}
           image={element.recipe.image}
           calories={element.recipe.calories}
-          ingredients={element.recipe.ingredientLines}/>
+          ingredients={element.recipe.ingredientLines}
+          meal={element.recipe.mealType}
+          cuisine={element.recipe.cuisineType}
+        />
       ))}
     </div>
-  )}
+  );}
 
 export default App;
