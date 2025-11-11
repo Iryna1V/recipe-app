@@ -1,16 +1,36 @@
-# React + Vite
+## About Find a recipe web application:
+Find a recipe web application will help you find an idea for breakfast, lunch or dinner from the ingredients you have.  You can quickly find recipes with the number of calories.  Enter the ingredients you have or the name of the dish you want to cook into search bar.  Click Enter or the icon button.  Browse through a list of delicious recipes that match your search.  Enjoy.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Functionalities:
 
-Currently, two official plugins are available:
+- The app is built with advanced React concepts and hooks implementation.
+- API Integration ( the recipe API that provides access to a huge variety of recipes).
+- Simple user interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech stack:
+- React 19.0
+- Vite
+- CSS.
 
-## React Compiler
+## Run the application:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Install dependencies:
 
-## Expanding the ESLint configuration
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Start the development server:
+
+npm run dev
+
+Then open http://localhost:3000 to view it in your browser.
+
+## Build for production:
+To create an optimized production build, run:
+
+npm run build
+
+The build will be generated in the 'dist' (or 'build') folder ready for deployment.
+
+## Demo:
+  Here you can see the demo version of the Find a Recipe web aplication:
+  [Find a recipe App](https://find-your-best-recipe.netlify.app//)
