@@ -50,26 +50,6 @@ useEffect(() => {
           </div>
         </form>
       </div>
-      {/* <div className="container">
-        <form onSubmit={finalSearch}>
-          <input className="search"
-            type="text"
-            placeholder="Enter the ingredients you have..."
-            onChange={myRecipeSearch}
-            value={mySearch}
-          />
-        </form>
-      </div>
-
-      <div className="container">
-        <button onClick={finalSearch}>
-          <img
-            className="pan"
-            src="https://img.icons8.com/fluency/48/000000/fry.png"
-            alt="pan"
-          />
-        </button>
-      </div> */}
       {myRecipes.map((element, index) => (
         <MyRecipesComponent
           key={index}
