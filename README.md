@@ -1,5 +1,7 @@
 ## About Find a recipe web application:
+
 Find a recipe web application will help you find an idea for breakfast, lunch or dinner from the ingredients you have.  You can quickly find recipes with the number of calories.  Enter the ingredients you have or the name of the dish you want to cook into search bar.  Click Enter or the icon button.  Browse through a list of delicious recipes that match your search.  Enjoy.
+<img width="2151" height="1661" alt="Rectangle (5)" src="https://github.com/user-attachments/assets/d3e1f81d-6946-4403-83a8-9218dc6206ae" />
 
 ## Functionalities:
 
